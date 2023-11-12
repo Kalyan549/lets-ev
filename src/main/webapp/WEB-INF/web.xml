@@ -1,0 +1,201 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <listener>
+    <listener-class>com.india.letsev.listeners.LetsEvListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.india.letsev.listeners.LetsEvSessionListener</listener-class>
+  </listener>
+
+  <filter>
+    <filter-name>lets-ev-filter</filter-name>
+    <filter-class>com.india.letsev.filter.LetsEvFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>lets-ev-filter</filter-name>
+    <url-pattern>*</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>get-admin</servlet-name>
+    <servlet-class>com.india.letsev.servlet.GetAdminByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get-admin</servlet-name>
+    <url-pattern>/getadmin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>get-all-admin</servlet-name>
+    <servlet-class>com.india.letsev.servlet.GetAllAdminsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get-all-admin</servlet-name>
+    <url-pattern>/getalladmins</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>edit-admin</servlet-name>
+    <servlet-class>com.india.letsev.servlet.EditAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>edit-admin</servlet-name>
+    <url-pattern>/updateadmin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>delete-admin</servlet-name>
+    <servlet-class>com.india.letsev.servlet.DeleteAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete-admin</servlet-name>
+    <url-pattern>/deleteadmin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>register-admin</servlet-name>
+    <servlet-class>com.india.letsev.servlet.AdminRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>register-admin</servlet-name>
+    <url-pattern>/registeradmin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>get-user</servlet-name>
+    <servlet-class>com.india.letsev.servlet.GetUserByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get-user</servlet-name>
+    <url-pattern>/getuser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>get-all-users</servlet-name>
+    <servlet-class>com.india.letsev.servlet.GetAllUsersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get-all-users</servlet-name>
+    <url-pattern>/getallusers</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>get-car</servlet-name>
+    <servlet-class>com.india.letsev.servlet.GetCarByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get-car</servlet-name>
+    <url-pattern>/getcar</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>get-all-car</servlet-name>
+    <servlet-class>com.india.letsev.servlet.GetAllCarsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get-all-car</servlet-name>
+    <url-pattern>/getallcars</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>edit-car</servlet-name>
+    <servlet-class>com.india.letsev.servlet.EditCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>edit-car</servlet-name>
+    <url-pattern>/updatecar</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>delete-car</servlet-name>
+    <servlet-class>com.india.letsev.servlet.DeleteCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete-car</servlet-name>
+    <url-pattern>/deletecar</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>register-car</servlet-name>
+    <servlet-class>com.india.letsev.servlet.CarRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>register-car</servlet-name>
+    <url-pattern>/registercar</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>edit-user</servlet-name>
+    <servlet-class>com.india.letsev.servlet.EditUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>edit-user</servlet-name>
+    <url-pattern>/updateuser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>delete-user</servlet-name>
+    <servlet-class>com.india.letsev.servlet.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete-user</servlet-name>
+    <url-pattern>/deleteuser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>register-user</servlet-name>
+    <servlet-class>com.india.letsev.servlet.UserRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>register-user</servlet-name>
+    <url-pattern>/registeruser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>booking-register</servlet-name>
+    <servlet-class>com.india.letsev.servlet.CarBookingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>booking-register</servlet-name>
+    <url-pattern>/bookingregister</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>get-booking</servlet-name>
+    <servlet-class>com.india.letsev.servlet.GetBookingByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get-booking</servlet-name>
+    <url-pattern>/getbooking</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>get-all-booking</servlet-name>
+    <servlet-class>com.india.letsev.servlet.GetAllBookingsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get-all-booking</servlet-name>
+    <url-pattern>/viewallbookings</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>update-booking</servlet-name>
+    <servlet-class>com.india.letsev.servlet.CarBookingEditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update-booking</servlet-name>
+    <url-pattern>/updatebooking</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>delete-booking</servlet-name>
+  <servlet-class>com.india.letsev.servlet.DeleteBookingServlet</servlet-class>
+</servlet>
+  <servlet-mapping>
+    <servlet-name>delete-booking</servlet-name>
+    <url-pattern>/deletebooking</url-pattern>
+  </servlet-mapping>
+</web-app>
